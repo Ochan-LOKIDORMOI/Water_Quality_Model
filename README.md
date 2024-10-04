@@ -39,7 +39,7 @@ The presence of outliers was acknowledged but retained to ensure the model captu
 
 ![Screenshot 2024-10-04 170239](https://github.com/user-attachments/assets/560049f1-5585-42ab-91a4-dd0816e1271f)
 
-### ** Scaling Features:**
+### **Scaling Features:**
 Standardization was applied to the features to ensure they had a mean of 0 and a standard deviation of 1. 
 This step is crucial for optimizing the performance 
 
