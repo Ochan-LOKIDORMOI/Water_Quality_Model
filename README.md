@@ -7,78 +7,39 @@ The dataset contains measurements related to water quality and potability, with 
 3. Sadick Mustapha Achuli - L1 regularization with/without earlystopping and comparison of RMSPOP and Adam and Error Analysis
 4. Dimitri Kwihangana - L2 regularization with/without earlystopping and comaprison of RMSPOP and Adam and Dropout
 
-# **Data Loading and Initial Exploration**
+# **Data Quality and Preprocessing**
 In this project, we are using google colab where most of the data loading packages are being installed by default.
 We will load the dataset using pandas library and perform initial exploratory data analysis to understand the dataset.
 
-### **1. Loading the data**
-The data is loaded using `pandas` and the dataset is mounted from the drive as shown in the code below
+- The dataset contained missing values in several columns, notably in pH and Sulfate, which were addressed by
+filling these gaps with the mean of their respective columns. This approach ensured that the dataset remained intact
+without losing valuable information.
+- Outliers were identified in the Solids feature through boxplots. However, they were retained to preserve data integrity,
+  allowing the model to capture all potential patterns essential for accurate predictions.
 
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-```python
-import pandas as pd
-data = '/content/drive/MyDrive/water_potability.csv'
-df = pd.read_csv(data)
-```
-### **2. Exploring the Data:**
-In data exploration, we first need to know our data by checking the content in it.
-So, the first few rows of the dataset can be viewed using:
-```python
-df.head()
-```
-### **3. Checking Data Shape and Info:**
-In order to fully understand our data, we check the `shape` and `info` of the DataFrame to understand its structure using the the print commands below:
-```python
-print(df.shape)  # Output: (3276, 10) as in the notebook
-print(df.info())
-```
-### **4. Handling Missing Values:**
-We check for missing values in the dataset using the `isnull()` function and then drop any rows or fill it depending on the data size.
-In this case, we filled the Missing values in the dataset with the mean of their respective columns using the command below:
-```python
-df.fillna(df.mean(), inplace=True)
-```
-### **5. Checking for Missing Values:**
-After filling missing values, it's good practice to verify that there are no remaining NaN values in your data.
-We can do this by using the `isnull().sum()` function as shown below:
-```python
-print(df.isnull().sum())
-```
 # **Data Visualization**
-In this section, we will perform data visualization to understand the distribution of the features in the dataset.
-We will use `matplotlib` and `seaborn` libraries for data visualization as imported in the colab.
+In this section, we performed data visualization to understand the distribution of the features in the dataset.
+We used `matplotlib` and `seaborn` libraries for data visualization as imported in the colab.
 
 ### **1. Correlation Heatmap:**
-A heatmap is used to check for correlations between variables. 
-No strong correlations were found, so no dimensionality reduction techniques to be applied.
+The heatmap generated using Seaborn provided a visual representation of the correlations between
+various features in the dataset. 
+Each feature's relationship with others was assessed, showing that no two or more variables were strongly correlated. 
+This suggests that all features contribute unique information to the model, reducing the need for dimensionality reduction techniques.
 
 ![Screenshot 2024-10-04 170215](https://github.com/user-attachments/assets/8b6e9b9e-fb7c-4b52-bb1f-0e68023cf48e)
 
+###**Feature Relationships**
+The heatmap indicated moderate correlations among certain features, such as pH and Chloramines,
+which can be important for understanding how these parameters interact in determining water potability.
+
 ### **2. Boxplot for Outlier Detection:**
-We use boxplot to detect outliers in the dataset. The boxplot is used to visualize the distribution.
-Despite the outliers being found int the `**"Solid columns"**`, standardization is applied to scale the features.
+Following the correlation analysis, boxplots were used to identify outliers in features like Solids.
+The presence of outliers was acknowledged but retained to ensure the model captures all potential patterns that could influence predictions.
 
 ![Screenshot 2024-10-04 170239](https://github.com/user-attachments/assets/560049f1-5585-42ab-91a4-dd0816e1271f)
 
-# **Data Preparation for Modeling**
-### **1. Separating Features and Target Variable:**
-We separate the `features(X)` from the target `variable(y)` using the following commands:
-```python
- X = df.drop('Potability', axis=1)
- y = df['Potability']
-```
 ### **2. Scaling Features:**
-The StandardScaler from sklearn is used to scale the features, ensuring that all variables have a mean of `0` and standard deviation of `1`. The scaled features are stored in a new DataFrame as shown below:
-```python
- scaler = StandardScaler()
- X_scaled = scaler.fit_transform(X)
-```
-## Create a new DataFrame with scaled features
-```python
-X_scaled_df = pd.DataFrame(X_scaled, columns=X.columns)
-print(X_scaled_df.head())
-```
+Standardization was applied to the features to ensure they had a mean of 0 and a standard deviation of 1. 
+This step is crucial for optimizing the performance 
+
