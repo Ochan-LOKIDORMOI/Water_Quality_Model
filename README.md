@@ -43,6 +43,7 @@ We will use matplotlib and seaborn libraries for data visualization as imported 
 ### **1. Correlation Heatmap:**
 A heatmap is used to check for correlations between variables. 
 No strong correlations were found, so no dimensionality reduction techniques to be applied.
+
 ![Screenshot 2024-10-04 170215](https://github.com/user-attachments/assets/8b6e9b9e-fb7c-4b52-bb1f-0e68023cf48e)
 
 ### **2. Boxplot for Outlier Detection:**
