@@ -50,6 +50,8 @@ No strong correlations were found, so no dimensionality reduction techniques to 
 We use boxplot to detect outliers in the dataset. The boxplot is used to visualize the distribution.
 Despite the outliers being found int the **"Solid columns"**, standardization is applied to scale the features.
 
+![Screenshot 2024-10-04 170239](https://github.com/user-attachments/assets/560049f1-5585-42ab-91a4-dd0816e1271f)
+
 # **Data Preparation for Modeling**
 ### **1. Separating Features and Target Variable:**
     We separate the features(X) from the target variable(y) using the following commands:
