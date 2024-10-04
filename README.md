@@ -55,10 +55,10 @@ Despite the outliers being found int the `**"Solid columns"**`, standardization 
 # **Data Preparation for Modeling**
 ### **1. Separating Features and Target Variable:**
 We separate the `features(X)` from the target `variable(y)` using the following commands:
-
-- X = df.drop('Potability', axis=1)
-- y = df['Potability']
-
+```python
+ X = df.drop('Potability', axis=1)
+ y = df['Potability']
+```
 ### **2. Scaling Features:**
 The StandardScaler from sklearn is used to scale the features, ensuring that all variables have a mean of `0` and standard deviation of `1`. The scaled features are stored in a new DataFrame as shown below:
 
