@@ -7,35 +7,35 @@ We will load the dataset using pandas library and perform initial exploratory da
 
 ### **1. Loading the data**
 The data is loaded using `pandas` and the dataset is mounted from the drive as shown in the code below
-
-- import pandas as pd
-- data = '/content/drive/MyDrive/water_potability.csv'
-- df = pd.read_csv(data)
-
+```python
+import pandas as pd
+data = '/content/drive/MyDrive/water_potability.csv'
+df = pd.read_csv(data)
+```
 ### **2. Exploring the Data:**
 In data exploration, we first need to know our data by checking the content in it.
 So, the first few rows of the dataset can be viewed using:
-
-- df.head()
-
+```python
+df.head()
+```
 ### **3. Checking Data Shape and Info:**
 In order to fully understand our data, we check the `shape` and `info` of the DataFrame to understand its structure using the the print commands below:
-
-- print(df.shape)  **# Output: (3276, 10) as in the notebook**
-- print(df.info())
-
+```python
+print(df.shape)  **# Output: (3276, 10) as in the notebook**
+print(df.info())
+```
 ### **4. Handling Missing Values:**
 We check for missing values in the dataset using the `isnull()` function and then drop any rows or fill it depending on the data size.
 In this case, we filled the Missing values in the dataset with the mean of their respective columns using the command below:
-
-- df.fillna(df.mean(), inplace=True)
-
+```python
+df.fillna(df.mean(), inplace=True)
+```
 ### **5. Checking for Missing Values:**
 After filling missing values, it's good practice to verify that there are no remaining NaN values in your data.
 We can do this by using the `isnull().sum()` function as shown below:
-
-- print(df.isnull().sum())
-
+```python
+print(df.isnull().sum())
+```
 # **Data Visualization**
 In this section, we will perform data visualization to understand the distribution of the features in the dataset.
 We will use `matplotlib` and `seaborn` libraries for data visualization as imported in the colab.
@@ -61,11 +61,12 @@ We separate the `features(X)` from the target `variable(y)` using the following 
 ```
 ### **2. Scaling Features:**
 The StandardScaler from sklearn is used to scale the features, ensuring that all variables have a mean of `0` and standard deviation of `1`. The scaled features are stored in a new DataFrame as shown below:
-
-- scaler = StandardScaler()
-- X_scaled = scaler.fit_transform(X)
-
+```python
+ scaler = StandardScaler()
+ X_scaled = scaler.fit_transform(X)
+```
 ## Create a new DataFrame with scaled features
-- X_scaled_df = pd.DataFrame(X_scaled, columns=X.columns)
-- print(X_scaled_df.head())
-
+```python
+X_scaled_df = pd.DataFrame(X_scaled, columns=X.columns)
+print(X_scaled_df.head())
+```
