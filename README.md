@@ -21,7 +21,7 @@ df.head()
 ### **3. Checking Data Shape and Info:**
 In order to fully understand our data, we check the `shape` and `info` of the DataFrame to understand its structure using the the print commands below:
 ```python
-print(df.shape)  **# Output: (3276, 10) as in the notebook**
+print(df.shape)  # Output: (3276, 10) as in the notebook
 print(df.info())
 ```
 ### **4. Handling Missing Values:**
