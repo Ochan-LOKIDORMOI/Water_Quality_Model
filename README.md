@@ -29,7 +29,7 @@ This suggests that all features contribute unique information to the model, redu
 
 ![Screenshot 2024-10-04 170215](https://github.com/user-attachments/assets/8b6e9b9e-fb7c-4b52-bb1f-0e68023cf48e)
 
-###**Feature Relationships**
+### **Feature Relationships**
 The heatmap indicated moderate correlations among certain features, such as pH and Chloramines,
 which can be important for understanding how these parameters interact in determining water potability.
 
@@ -39,7 +39,7 @@ The presence of outliers was acknowledged but retained to ensure the model captu
 
 ![Screenshot 2024-10-04 170239](https://github.com/user-attachments/assets/560049f1-5585-42ab-91a4-dd0816e1271f)
 
-### **2. Scaling Features:**
+### ** Scaling Features:**
 Standardization was applied to the features to ensure they had a mean of 0 and a standard deviation of 1. 
 This step is crucial for optimizing the performance 
 
