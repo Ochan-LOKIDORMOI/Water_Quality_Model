@@ -54,7 +54,7 @@ Despite the outliers being found int the **"Solid columns"**, standardization is
 
 # **Data Preparation for Modeling**
 ### **1. Separating Features and Target Variable:**
-    We separate the features(X) from the target variable(y) using the following commands:
+We separate the features(X) from the target variable(y) using the following commands:
 
 - X = df.drop('Potability', axis=1)
 - y = df['Potability']
