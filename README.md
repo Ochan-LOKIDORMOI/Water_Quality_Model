@@ -1,6 +1,12 @@
 ﻿# **Overview of the Water Quality Dataset**
 The dataset contains measurements related to water quality and potability, with each row representing a water sample. The Potability column indicates whether the water is suitable for human consumption. The dataset includes various features such as pH, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic Carbon, Trihalomethanes, and Turbidity.
 
+# ** Role of Each Member **
+1. Ochan Den-Mark Michael Lokidormoi - Data Loading and Preprocessing
+2. Alhassan Alimamy Dumbuya - Vanilla Model Implementation
+3. Sadick Mustapha Achuli - L1 regularization with/without earlystopping and comparison of RMSPOP and Adam and Error Analysis
+4. Dimitri Kwihangana - L2 regularization with/without earlystopping and comaprison of RMSPOP and Adam and Dropout
+
 # **Data Loading and Initial Exploration**
 In this project, we are using google colab where most of the data loading packages are being installed by default.
 We will load the dataset using pandas library and perform initial exploratory data analysis to understand the dataset.
