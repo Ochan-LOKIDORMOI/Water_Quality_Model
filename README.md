@@ -7,6 +7,12 @@ We will load the dataset using pandas library and perform initial exploratory da
 
 ### **1. Loading the data**
 The data is loaded using `pandas` and the dataset is mounted from the drive as shown in the code below
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
 ```python
 import pandas as pd
 data = '/content/drive/MyDrive/water_potability.csv'
