@@ -67,3 +67,17 @@ Changing the optimiser for L1 only improved the model performance by 2%. which i
 ![download](https://github.com/user-attachments/assets/3a4ed90b-2c52-497e-a882-d3f99ff166ff)
 
 As we can see, the confusion matrix did not change compared to the previous one.
+
+### **Model with L2 Regularization, Adam Optimizer**
+
+In this model, L2 regularization was applied to combat overfitting, using the Adam optimizer for efficient weight updates. Key findings while tuning the learning rate were:
+
+i) Higher Learning Rate: The model trained faster with fewer epochs, but larger weight updates risked overshooting the optimal point, leading to premature early stopping.
+
+ii) Lower Learning Rate: The model trained slower, requiring more epochs but resulted in smoother convergence and more stable training.
+The overall overview is that the model results and accuracy did not differ from the previous model as the confusion matrices are almost identical. 
+
+**Confusion Matrix for the model above:**
+
+![tfdownload](https://github.com/user-attachments/assets/4c394239-f9ef-42f0-bdeb-69f51fa66763)
+
