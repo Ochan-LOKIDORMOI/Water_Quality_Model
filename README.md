@@ -97,3 +97,19 @@ Despite implementing L2 regularization and RMSprop, the model's performance show
 
 ![download](https://github.com/user-attachments/assets/b57902cd-5dd2-4ea5-ab4b-8005205d0331)
 
+### Model with L2 Regularization, Dropout and Adam Optimizer
+
+This model employs L2 regularization and Dropout to mitigate overfitting, utilizing the Adam optimizer with a learning rate of 0.001. The ReduceLROnPlateau callback adjusts the learning rate if the validation loss does not improve for 10 epochs.
+
+Key Observations:
+i) Dropout: The use of Dropout (40% in the first layer and 30% in the second) effectively reduces overfitting by randomly deactivating neurons during training.
+
+ii) Learning Rate Adjustment: The ReduceLROnPlateau strategy enables the model to dynamically lower the learning rate, allowing for finer adjustments in weight updates.
+
+### Result:
+This model performed better than previous versions up to 70 percent of accuracy, with improved validation accuracy and class predictions.
+
+**Confusion Matrix for the model above:**
+
+![nload (1)](https://github.com/user-attachments/assets/38a0b478-ac90-4bd2-9a04-a839d6d793e9)
+
