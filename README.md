@@ -91,6 +91,7 @@ ii) Lower Learning Rate: A lower learning rate (0.0001) allowed for smoother con
 
 Result:
 Despite implementing L2 regularization and RMSprop, the model's performance showed no significant improvement, with validation accuracy and confusion matrix similar to earlier models.
+
 **Confusion Matrix for the model above:**
 ![download](https://github.com/user-attachments/assets/b57902cd-5dd2-4ea5-ab4b-8005205d0331)
 
