@@ -80,4 +80,17 @@ The overall overview is that the model results and accuracy did not differ from 
 **Confusion Matrix for the model above:**
 
 ![tfdownload](https://github.com/user-attachments/assets/4c394239-f9ef-42f0-bdeb-69f51fa66763)
+### Model with L2 Regularization,
+ RMSprop Optimizer, and Early Stopping
+This model employs L2 regularization in both layers to reduce overfitting. The RMSprop optimizer, set with a learning rate of 0.0001, is used for adaptive weight updates.
+
+Key Observations:
+i) Higher Learning Rate: Using a higher learning rate (e.g., 0.001) led to faster convergence but risked overshooting and premature early stopping.
+
+ii) Lower Learning Rate: A lower learning rate (0.0001) allowed for smoother convergence over more epochs, though it extended training time.
+
+Result:
+Despite implementing L2 regularization and RMSprop, the model's performance showed no significant improvement, with validation accuracy and confusion matrix similar to earlier models.
+**Confusion Matrix for the model above:**
+![download](https://github.com/user-attachments/assets/b57902cd-5dd2-4ea5-ab4b-8005205d0331)
 
