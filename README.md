@@ -43,7 +43,7 @@ The presence of outliers was acknowledged but retained to ensure the model captu
 Standardization was applied to the features to ensure they had a mean of 0 and a standard deviation of 1. 
 This step is crucial for optimizing the performance 
 
-### ** Second model with L1 regularisation with early stopping and Adam optimiser**
+### **Second model with L1 regularisation with early stopping and Adam optimiser**
 For the second model, L1 regualrisation was implemented together with early stopping and Adam optimiser. I kept tunning the L1 hyperparameters like kernel_regularizer size, and the Adam hyperparameter (learning rate). I realized these while tuning the learning rate:
 **Higher learning rate**: Model used fewer epochs since the model can make larger weight updates, but it risks overshooting the optimal point or causing large oscillations, triggering early stopping prematurely.
 **Lower learning rate**: Model used more since weight updates are smaller, but the model could more smoothly converge to a minimum, potentially leading to more effective training and fewer early stops.
