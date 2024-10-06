@@ -141,8 +141,10 @@ This model performed better than previous versions up to 70 percent of accuracy,
 
 
 
-<u>### Authors and contributors</u>
-Achuli Mustapha Sadick - m.achuli@alustudent.com
-Ochan Den-Mark Michael LOKIDORMOI - o.lokidormo@alustudent.com
-Dimitri Kwihangana  - k.dimitri@alustudent.com
-Alhassan Alimamy Dumbuya - a.dumbuya@alustudent.com
+### <u>Authors and Contributors</u>
+
+- Achuli Mustapha Sadick - m.achuli@alustudent.com
+- Ochan Den-Mark Michael LOKIDORMOI - o.lokidormo@alustudent.com
+- Dimitri Kwihangana - k.dimitri@alustudent.com
+- Alhassan Alimamy Dumbuya - a.dumbuya@alustudent.com
+
