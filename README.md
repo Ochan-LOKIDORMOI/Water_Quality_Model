@@ -59,6 +59,8 @@ A decent start where initial accuracies lie in the range of 0.59 and quickly get
 
 **Overfitting Signs:** After the 35th epoch, the validation loss starts to be stuck, or even slightly increase, while the accuracy of training continuously improves-this is a surefire sign of overfitting.
 
+![first](https://github.com/user-attachments/assets/ae47a6f2-344e-41b5-bdc0-4871610596c8)
+
 ### **Validation Performance:**
 The validation accuracy was hovering between 66 and 70%, and hence proved moderate generalization on unseen data but could not show further consistent improvement.
 The graph for validation loss did not keep on falling and showed a slight increase toward the later epochs, thus cementing the overfitting signs.
