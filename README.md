@@ -139,3 +139,10 @@ This model performed better than previous versions up to 70 percent of accuracy,
 
 ![nload (1)](https://github.com/user-attachments/assets/38a0b478-ac90-4bd2-9a04-a839d6d793e9)
 
+
+
+<u>### Authors and contributors</u>
+Achuli Mustapha Sadick - m.achuli@alustudent.com
+Ochan Den-Mark Michael LOKIDORMOI - o.lokidormo@alustudent.com
+Dimitri Kwihangana  - k.dimitri@alustudent.com
+Alhassan Alimamy Dumbuya - a.dumbuya@alustudent.com
