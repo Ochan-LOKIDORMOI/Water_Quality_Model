@@ -7,6 +7,9 @@ The dataset contains measurements related to water quality and potability, with 
 3. Sadick Mustapha Achuli - L1 regularization with/without earlystopping and comparison of RMSPOP and Adam and Error Analysis and Model Evaluation
 4. Dimitri Kwihangana - L2 regularization with/without earlystopping and comaprison of RMSPOP and Adam and Dropout
 
+### **Link to presentation** 
+https://www.canva.com/design/DAGSzbkqbQo/fIetJvLpyBLdbglpMISeFA/edit?utm_content=DAGSzbkqbQo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 # **Data Quality and Preprocessing**
 In this project, we are using google colab where most of the data loading packages are being installed by default.
 We will load the dataset using pandas library and perform initial exploratory data analysis to understand the dataset.
