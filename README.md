@@ -43,6 +43,30 @@ The presence of outliers was acknowledged but retained to ensure the model captu
 Standardization was applied to the features to ensure they had a mean of 0 and a standard deviation of 1. 
 This step is crucial for optimizing the performance 
 
+###  **First Model: Vanilla Model Implementation**
+The model trained on water potability predictions is increasing smoothly in accuracy over the epochs, while it is overfitting at the same time after a certain point in the process.
+
+Key Highlights of the Training:
+
+### **Model Architecture:**
+Input Layer: A dense input layer with 64 units and ReLU activation, since the number of features in the data is that much.
+Hidden Layer: Comprise one dense layer of 32 units with ReLU activation.
+Output Layer: One unit, Sigmoid activation, the task is to provide binary predictions about water potability.
+### **Training Progress:**
+A decent start where initial accuracies lie in the range of 0.59 and quickly get into the range of 0.70-0.80.
+
+**Overall Best Performance:** Somewhere in epoch 30-35, where training accuracy goes up towards 77-80%, the validation accuracy stays around 69-70%.
+
+**Overfitting Signs:** After the 35th epoch, the validation loss starts to be stuck, or even slightly increase, while the accuracy of training continuously improves-this is a surefire sign of overfitting.
+
+### **Validation Performance:**
+The validation accuracy was hovering between 66 and 70%, and hence proved moderate generalization on unseen data but could not show further consistent improvement.
+The graph for validation loss did not keep on falling and showed a slight increase toward the later epochs, thus cementing the overfitting signs.
+
+### **Possible Improvements:**
+**Early Stopping:** It would be beneficial to avoid overfitting by early stopping, when the validation loss stops improving.
+**Regularization:** Overfitting could be prevented by the addition of L2 regularization or dropout.
+
 ### **Second model with L1 regularisation with early stopping and Adam optimiser**
 For the second model, L1 regualrisation was implemented together with early stopping and Adam optimiser. I kept tunning the L1 hyperparameters like kernel_regularizer size, and the Adam hyperparameter (learning rate). I realized these while tuning the learning rate:
 
