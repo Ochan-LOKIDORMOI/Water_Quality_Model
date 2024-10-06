@@ -4,7 +4,7 @@ The dataset contains measurements related to water quality and potability, with 
 ### **Role of Each Member**
 1. Ochan Den-Mark Michael LOKIDORMOI - Data Loading and Preprocessing
 2. Alhassan Alimamy Dumbuya - Vanilla Model Implementation
-3. Sadick Mustapha Achuli - L1 regularization with/without earlystopping and comparison of RMSPOP and Adam and Error Analysis
+3. Sadick Mustapha Achuli - L1 regularization with/without earlystopping and comparison of RMSPOP and Adam and Error Analysis and Model Evaluation
 4. Dimitri Kwihangana - L2 regularization with/without earlystopping and comaprison of RMSPOP and Adam and Dropout
 
 # **Data Quality and Preprocessing**
